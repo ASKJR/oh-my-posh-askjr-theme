@@ -36,3 +36,7 @@
                 Import-Module -Name Terminal-Icons
 
 ```
+
+![screenshot](oh-my-posh-askjr-theme.png)
+
+![screenshot](oh-my-posh-askjr-theme-2.png)
