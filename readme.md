@@ -1,6 +1,21 @@
-# Windows powershell
+# Windows powershell (W11)
+
+Prerequisite:
+
+0.Check in MS store if Windows Terminal is installed:
+
+![screenshot](windows-terminal.png)
+
+1.Install a nerd a font:
+<https://github.com/ryanoasis/nerd-fonts>
+
+2.Set a nerd font as default for console:
+
+![screenshot](nerd-font.png)
 
 ```console
+Main steps:
+
 1) Run in powershell:
 
     winget install JanDeDobbeleer.OhMyPosh -s winget
@@ -37,6 +52,14 @@
 
 ```
 
+## File $profile
+
+![screenshot](profile.png)
+
+## Results
+
 ![screenshot](oh-my-posh-askjr-theme.png)
 
 ![screenshot](oh-my-posh-askjr-theme-2.png)
+
+![screenshot](icons.png)
