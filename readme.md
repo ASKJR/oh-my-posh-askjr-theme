@@ -1,6 +1,14 @@
-# Oh-my-posh quick guide
+# My personal oh-my-posh theme
 
-## Windows powershell (W11)
+## About
+
+"A prompt theme engine for any shell." - <https://ohmyposh.dev/>
+
+I have configured my personal theme in askjr-main.omp.json file.
+
+## Quick startup guide
+
+### Windows powershell (W11)
 
 Prerequisite:
 
@@ -54,11 +62,11 @@ Main steps:
 
 ```
 
-### File $profile
+#### File $profile
 
 ![screenshot](profile.png)
 
-### Results for powershell
+#### Results for powershell
 
 ![screenshot](oh-my-posh-askjr-theme.png)
 
@@ -66,7 +74,7 @@ Main steps:
 
 ![screenshot](icons.png)
 
-## WSL Ubuntu bash
+### WSL Ubuntu bash
 
 ```bash
 
@@ -102,6 +110,6 @@ source ~/.bashrc
 
 ```
 
-### Results for bash
+#### Results for bash
 
 ![screenshot](WLS-ubuntu-oh-my-posh.png)
