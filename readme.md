@@ -1,4 +1,6 @@
-# Windows powershell (W11)
+# Oh-my-posh quick guide
+
+## Windows powershell (W11)
 
 Prerequisite:
 
@@ -52,14 +54,54 @@ Main steps:
 
 ```
 
-## File $profile
+### File $profile
 
 ![screenshot](profile.png)
 
-## Results
+### Results for powershell
 
 ![screenshot](oh-my-posh-askjr-theme.png)
 
 ![screenshot](oh-my-posh-askjr-theme-2.png)
 
 ![screenshot](icons.png)
+
+## WSL Ubuntu bash
+
+```bash
+
+mkdir bin
+
+#In case unzip is not installed
+sudo apt-get install unzip
+
+curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin
+
+
+nano .profile
+
+# Add the follwing lines in .profile (if does not exist already)
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
+
+
+nano ~/.bashrc
+
+# Add the followin lines in ~/.bashrc
+# Add /home/kato/bin to PATH
+export PATH=$HOME/bin:$PATH
+
+# Load oh-my-posh configuration
+eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/ASKJR/oh-my-posh-askjr-theme/main/askjr-main.omp.json')"
+
+#For nano, press Ctrl + O, Enter, and Ctrl + X.
+
+# Apply the changes:
+source ~/.bashrc
+
+```
+
+### Results for bash
+
+![screenshot](WLS-ubuntu-oh-my-posh.png)
