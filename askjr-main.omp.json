@@ -33,7 +33,7 @@
             "display_host": true
           },
           "style": "plain",
-          "template": "{{ if .SSHSession }} \ueba9 {{ end }} {{ .UserName }} ",
+          "template": "{{ if .SSHSession }} \ueba9{{ end }} {{ .UserName }} ",
           "type": "session"
         },
         {
