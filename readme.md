@@ -113,3 +113,29 @@ source ~/.bashrc
 #### Results for bash
 
 ![screenshot](WLS-ubuntu-oh-my-posh.png)
+
+### CMD (W11)
+
+In CMD:
+
+```cmd
+0) winget install JanDeDobbeleer.OhMyPosh -s winget
+
+1) winget install clink
+
+2) clink info
+
+3) Navigate to scripts folder path listed by the previous command.
+  3.1) e.g C:\Users\kato\AppData\Local\clink
+
+4) Create 'oh-my-posh.lua' file
+    4.1) Add the following line:
+        load(io.popen('oh-my-posh init cmd --config "https://raw.githubusercontent.com/ASKJR/oh-my-posh-askjr-theme/main/askjr-main.omp.json"'):read("*a"))()
+    4.2) Save
+
+5) Restart CMD
+```
+
+#### Results for CMD
+
+![screenshot](cmd-oh-my-posh.png)
